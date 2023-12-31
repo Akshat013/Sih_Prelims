@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIGHTHOUSE</title>
+    <link rel="stylesheet" href="cssFile.css">
+</head>
+<body>
+      <!---navbar-->
+      <div id="navbar">
+        <div class="left"> <img src="./images/logo.png"  height="50vh" alt="">   LIGHTHOUSE</div>
+        <div class="right">
+         <ul>
+             <li> <a href="#">HOME</a>              </li>
+             <li> <a href="#resources">RESOURCES<a>              </li>
+             <li> <a href="#about-us">ABOUT US</a>  </li>
+             <li> <a href="#contact-us">CONTACT US</a>        </li>
+             <li> <a href="#">LOG IN</a>            </li>
+         </ul>
+        </div>
+    </div>
+
+    <!-- main scholarship container -->
+<div class="scholarships-container">
+    <h1>SCHOLARSHIPS</h1>
+     <!-- first container -->
+
+       <div class="container-1">
+           <div class="text-1">
+               <h2>National Scholarships</h2>
+               <p>Find scholarships that cater to your needs across India</p>
+            </div>
+           <div class="tiles">
+              <div class="tile-items"> <a href="#" target="_blank"> <h5>ENGINEERING</h5></a>  </div>
+              <div class="tile-items"> <a href="#" target="_blank"> <h5>MEDICAL</h5></a>  </div>
+              <div class="tile-items"> <a href="#" target="_blank"> <h5>LAW</h5></a>  </div>
+              <div class="tile-items"> <a href="#" target="_blank"> <h5>BUSINESS</h5></a>  </div>
+              <div class="tile-items"> <a href="#" target="_blank"> <h5>OTHERS</h5></a>  </div>
+            </div>
+        </div> 
+     
+     <!-- second-container -->
+        <div class="container-2">
+            <div class="text-2">
+              <h2>International Scholarships</h2>
+              <p>Find scholarships abroad based on your field of study</p>
+            </div>
+            <div class="tiles">
+               <div class="tile-items"> <a href="#" target="_blank"> <h5>MEDICAL</h5></a>  </div>
+               <div class="tile-items"> <a href="#" target="_blank"> <h5>LAW</h5></a>  </div>
+               <div class="tile-items"> <a href="#" target="_blank"> <h5>ENGINEERING</h5></a>  </div>
+               <div class="tile-items"> <a href="#" target="_blank"> <h5>BUSINESS</h5></a>  </div>
+               <div class="tile-items"> <a href="#" target="_blank"> <h5>OTHERS</h5></a>  </div>
+            </div>
+        </div> 
+</div>
+
+<!-- resources section -->
+<div class="resources" id="resources">
+    <h1>Resources to help you</h1>
+    <div class="videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WUdumHvJmPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6ygTEwmJpN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dtFikV9vSlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+    </div>
+</div>
+
+
+<!-- about us section -->
+<div id="about-us" class="about-us">
+    <h1 class="about-us-heading">
+        ABOUT LIGHTHOUSE
+    </h1>
+    <p>We at LIGHTHOUSE have created a one stop solution for students like you to find a scholarship that caters to your needs and provides you all the monetary help that you need.
+        Scholarships for academic instituions from all around the world are listed here for you to choose the best fit for you. The data listed here is fetched from the entire world wide web using a web data scraper and further utilised to provide intelligent recommendations to the student using cloud computing technology.
+        Lighthouse is here to light the way to your perfect scholarship.
+        Happy scholarship finding!!!
+    </p>
+</div>
+
+<!-- contact us section -->
+<div class="contact-us" id="contact-us">
+    <h1>CONTACT US </h1>
+    <form method="POST" action ="teamgenesis0010@gmail.com">
+     
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input name="Name" type="text" placeholder="Your name" >
+        </div>
+        <div class="form-group">
+             <label for="email">Email</label>
+             <input name="email" type="email" placeholder="abc@gmail.com">
+        </div>
+        <div class="form-group">
+             <label for="query">Query </label>
+             <textarea name="query" type="text" placeholder="Write your Query here...">
+             </textarea>
+        </div>
+          
+        <button type="submit"><h4>Submit</h4></button>
+    </form>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <div id="team">TEAM GENESIS</div>
+    <div id="address">Based at JECRC Foundation</div>
+</div>
+
+
+<!-- javascript -->
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+</script>
+</body>
+</html>
